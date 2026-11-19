@@ -1,0 +1,182 @@
+2026-10-23T10:00:00-03:00 mosquitto version 2.0 starting
+2026-10-23T10:00:00-03:00 Opening ipv4 listen socket on port 1883.
+2026-10-23T10:00:00-03:00 Opening websockets listen socket on port 9001.
+2026-10-23T10:00:00-03:00 mosquitto version 2.0 running
+# Substitua este exemplo pelo log gerado durante o teste real.1795094420: mosquitto version 2.1.2 starting
+1795094420: Config loaded from mosquitto.conf.
+1795094420: Bridge support available.
+1795094420: Persistence support available.
+1795094420: TLS support available.
+1795094420: TLS-PSK support available.
+1795094420: Websockets support available.
+1795094420: Opening ipv4 listen socket on port 1883.
+1795094420: Error: Address already in use
+1795094420: mosquitto version 2.1.2 terminating
+1795094420: Saving in-memory database to ./data//mosquitto.db.
+1795094430: mosquitto version 2.1.2 starting
+1795094430: Config loaded from mosquitto.conf.
+1795094430: Bridge support available.
+1795094430: Persistence support available.
+1795094430: TLS support available.
+1795094430: TLS-PSK support available.
+1795094430: Websockets support available.
+1795094430: Opening ipv4 listen socket on port 1883.
+1795094430: Error: Address already in use
+1795094430: mosquitto version 2.1.2 terminating
+1795094430: Saving in-memory database to ./data//mosquitto.db.
+1795094557: mosquitto version 2.1.2 starting
+1795094557: Config loaded from mosquitto.conf.
+1795094557: Bridge support available.
+1795094557: Persistence support available.
+1795094557: TLS support available.
+1795094557: TLS-PSK support available.
+1795094557: Websockets support available.
+1795094557: Opening ipv4 listen socket on port 1883.
+1795094557: Opening ipv4 listen socket on port 9001.
+1795094557: mosquitto version 2.1.2 running
+1795094748: New connection from 127.0.0.1:60056 on port 1883.
+1795094748: New client connected from 127.0.0.1:60056 as auto-0CDB8056-FD63-470F-92B4-2F2F54838D4C (p4, c1, k60).
+1795094748: No will message specified.
+1795094748: Sending CONNACK to auto-0CDB8056-FD63-470F-92B4-2F2F54838D4C (0, 0)
+1795094748: Received PUBLISH from auto-0CDB8056-FD63-470F-92B4-2F2F54838D4C (d0, q0, r0, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795094748: Received DISCONNECT from auto-0CDB8056-FD63-470F-92B4-2F2F54838D4C
+1795094748: Client auto-0CDB8056-FD63-470F-92B4-2F2F54838D4C [127.0.0.1:60056] disconnected.
+1795094756: New connection from 127.0.0.1:35510 on port 1883.
+1795094756: New client connected from 127.0.0.1:35510 as auto-C17309AE-B562-7168-4E7F-DAF09D44BA37 (p4, c1, k60).
+1795094756: No will message specified.
+1795094756: Sending CONNACK to auto-C17309AE-B562-7168-4E7F-DAF09D44BA37 (0, 0)
+1795094756: Received PUBLISH from auto-C17309AE-B562-7168-4E7F-DAF09D44BA37 (d0, q0, r0, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795094756: Received DISCONNECT from auto-C17309AE-B562-7168-4E7F-DAF09D44BA37
+1795094756: Client auto-C17309AE-B562-7168-4E7F-DAF09D44BA37 [127.0.0.1:35510] disconnected.
+1795094756: New connection from 127.0.0.1:35526 on port 1883.
+1795094756: New client connected from 127.0.0.1:35526 as auto-24EEFB01-DD32-B66D-C7D3-7FA07F45EAFC (p4, c1, k60).
+1795094756: No will message specified.
+1795094756: Sending CONNACK to auto-24EEFB01-DD32-B66D-C7D3-7FA07F45EAFC (0, 0)
+1795094756: Received PUBLISH from auto-24EEFB01-DD32-B66D-C7D3-7FA07F45EAFC (d0, q0, r0, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795094756: Received DISCONNECT from auto-24EEFB01-DD32-B66D-C7D3-7FA07F45EAFC
+1795094756: Client auto-24EEFB01-DD32-B66D-C7D3-7FA07F45EAFC [127.0.0.1:35526] disconnected.
+1795094884: New connection from 127.0.0.1:54004 on port 1883.
+1795094884: New client connected from 127.0.0.1:54004 as auto-61380C43-4FE0-0DE1-A6F0-587613AB8E95 (p4, c1, k60).
+1795094884: No will message specified.
+1795094884: Sending CONNACK to auto-61380C43-4FE0-0DE1-A6F0-587613AB8E95 (0, 0)
+1795094884: Received PUBLISH from auto-61380C43-4FE0-0DE1-A6F0-587613AB8E95 (d0, q0, r0, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795094884: Received DISCONNECT from auto-61380C43-4FE0-0DE1-A6F0-587613AB8E95
+1795094884: Client auto-61380C43-4FE0-0DE1-A6F0-587613AB8E95 [127.0.0.1:54004] disconnected.
+1795094884: New connection from 127.0.0.1:54014 on port 1883.
+1795094884: New client connected from 127.0.0.1:54014 as auto-C45F36EE-7FFF-BD17-D95D-1B6AA8C553CF (p4, c1, k60).
+1795094884: No will message specified.
+1795094884: Sending CONNACK to auto-C45F36EE-7FFF-BD17-D95D-1B6AA8C553CF (0, 0)
+1795094884: Received PUBLISH from auto-C45F36EE-7FFF-BD17-D95D-1B6AA8C553CF (d0, q0, r0, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795094884: Received DISCONNECT from auto-C45F36EE-7FFF-BD17-D95D-1B6AA8C553CF
+1795094884: Client auto-C45F36EE-7FFF-BD17-D95D-1B6AA8C553CF [127.0.0.1:54014] disconnected.
+1795094884: New connection from 127.0.0.1:54020 on port 1883.
+1795094884: New client connected from 127.0.0.1:54020 as auto-735601DE-E6F8-1DCA-74A6-FFF78E162143 (p4, c1, k60).
+1795094884: No will message specified.
+1795094884: Sending CONNACK to auto-735601DE-E6F8-1DCA-74A6-FFF78E162143 (0, 0)
+1795094884: Received PUBLISH from auto-735601DE-E6F8-1DCA-74A6-FFF78E162143 (d0, q0, r0, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795094884: Received DISCONNECT from auto-735601DE-E6F8-1DCA-74A6-FFF78E162143
+1795094884: Client auto-735601DE-E6F8-1DCA-74A6-FFF78E162143 [127.0.0.1:54020] disconnected.
+1795094976: New connection from 127.0.0.1:37260 on port 1883.
+1795094976: New client connected from 127.0.0.1:37260 as auto-FF6AC0A5-973A-911E-08BA-C43E5054225B (p4, c1, k60).
+1795094976: No will message specified.
+1795094976: Sending CONNACK to auto-FF6AC0A5-973A-911E-08BA-C43E5054225B (0, 0)
+1795094976: Received PUBLISH from auto-FF6AC0A5-973A-911E-08BA-C43E5054225B (d0, q0, r0, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795094976: Received DISCONNECT from auto-FF6AC0A5-973A-911E-08BA-C43E5054225B
+1795094976: Client auto-FF6AC0A5-973A-911E-08BA-C43E5054225B [127.0.0.1:37260] disconnected.
+1795094976: New connection from 127.0.0.1:37276 on port 1883.
+1795094976: New client connected from 127.0.0.1:37276 as auto-0D2F6957-E1D5-AF35-0B8D-4785A9664902 (p4, c1, k60).
+1795094976: No will message specified.
+1795094976: Sending CONNACK to auto-0D2F6957-E1D5-AF35-0B8D-4785A9664902 (0, 0)
+1795094976: Received PUBLISH from auto-0D2F6957-E1D5-AF35-0B8D-4785A9664902 (d0, q0, r0, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795094976: Received DISCONNECT from auto-0D2F6957-E1D5-AF35-0B8D-4785A9664902
+1795094976: Client auto-0D2F6957-E1D5-AF35-0B8D-4785A9664902 [127.0.0.1:37276] disconnected.
+1795094976: New connection from 127.0.0.1:37280 on port 1883.
+1795094976: New client connected from 127.0.0.1:37280 as auto-6CB497B9-54DD-9F73-5294-0B170DD96DE3 (p4, c1, k60).
+1795094976: No will message specified.
+1795094976: Sending CONNACK to auto-6CB497B9-54DD-9F73-5294-0B170DD96DE3 (0, 0)
+1795094976: Received PUBLISH from auto-6CB497B9-54DD-9F73-5294-0B170DD96DE3 (d0, q0, r0, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795094976: Received DISCONNECT from auto-6CB497B9-54DD-9F73-5294-0B170DD96DE3
+1795094976: Client auto-6CB497B9-54DD-9F73-5294-0B170DD96DE3 [127.0.0.1:37280] disconnected.
+1795095014: New connection from 127.0.0.1:50506 on port 1883.
+1795095014: New client connected from 127.0.0.1:50506 as auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (p4, c1, k60).
+1795095014: No will message specified.
+1795095014: Sending CONNACK to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (0, 0)
+1795095014: Received SUBSCRIBE from auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095014: 	aulas/professor/# (QoS 0)
+1795095014: auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 0 aulas/professor/#
+1795095014: Sending SUBACK to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095023: New connection from 127.0.0.1:58164 on port 1883.
+1795095023: New client connected from 127.0.0.1:58164 as auto-935E81B3-FCA6-7FE3-A90B-C381BFE6755C (p4, c1, k60).
+1795095023: No will message specified.
+1795095023: Sending CONNACK to auto-935E81B3-FCA6-7FE3-A90B-C381BFE6755C (0, 0)
+1795095023: Received PUBLISH from auto-935E81B3-FCA6-7FE3-A90B-C381BFE6755C (d0, q0, r0, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795095023: Sending PUBLISH to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (d0, q0, r0, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795095023: Received DISCONNECT from auto-935E81B3-FCA6-7FE3-A90B-C381BFE6755C
+1795095023: Client auto-935E81B3-FCA6-7FE3-A90B-C381BFE6755C [127.0.0.1:58164] disconnected.
+1795095023: New connection from 127.0.0.1:58168 on port 1883.
+1795095023: New client connected from 127.0.0.1:58168 as auto-261C10B8-1A4B-9F2A-6FF5-0C7EF90C8017 (p4, c1, k60).
+1795095023: No will message specified.
+1795095023: Sending CONNACK to auto-261C10B8-1A4B-9F2A-6FF5-0C7EF90C8017 (0, 0)
+1795095023: Received PUBLISH from auto-261C10B8-1A4B-9F2A-6FF5-0C7EF90C8017 (d0, q0, r0, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795095023: Sending PUBLISH to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (d0, q0, r0, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795095023: Received DISCONNECT from auto-261C10B8-1A4B-9F2A-6FF5-0C7EF90C8017
+1795095023: Client auto-261C10B8-1A4B-9F2A-6FF5-0C7EF90C8017 [127.0.0.1:58168] disconnected.
+1795095023: New connection from 127.0.0.1:58180 on port 1883.
+1795095023: New client connected from 127.0.0.1:58180 as auto-6E2B8650-E176-DD09-2A09-F794808E3081 (p4, c1, k60).
+1795095023: No will message specified.
+1795095023: Sending CONNACK to auto-6E2B8650-E176-DD09-2A09-F794808E3081 (0, 0)
+1795095023: Received PUBLISH from auto-6E2B8650-E176-DD09-2A09-F794808E3081 (d0, q0, r0, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795095023: Sending PUBLISH to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (d0, q0, r0, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795095023: Received DISCONNECT from auto-6E2B8650-E176-DD09-2A09-F794808E3081
+1795095023: Client auto-6E2B8650-E176-DD09-2A09-F794808E3081 [127.0.0.1:58180] disconnected.
+1795095045: New connection from 127.0.0.1:45900 on port 1883.
+1795095045: New client connected from 127.0.0.1:45900 as auto-69BBFD69-AFBA-6C9B-B89E-061EEB5AB877 (p4, c1, k60).
+1795095045: No will message specified.
+1795095045: Sending CONNACK to auto-69BBFD69-AFBA-6C9B-B89E-061EEB5AB877 (0, 0)
+1795095045: Received PUBLISH from auto-69BBFD69-AFBA-6C9B-B89E-061EEB5AB877 (d0, q0, r1, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795095045: Sending PUBLISH to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (d0, q0, r0, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795095045: Received DISCONNECT from auto-69BBFD69-AFBA-6C9B-B89E-061EEB5AB877
+1795095045: Client auto-69BBFD69-AFBA-6C9B-B89E-061EEB5AB877 [127.0.0.1:45900] disconnected.
+1795095045: New connection from 127.0.0.1:45908 on port 1883.
+1795095045: New client connected from 127.0.0.1:45908 as auto-4E1DFE82-FD40-888B-D73C-A0350D77A948 (p4, c1, k60).
+1795095045: No will message specified.
+1795095045: Sending CONNACK to auto-4E1DFE82-FD40-888B-D73C-A0350D77A948 (0, 0)
+1795095045: Received PUBLISH from auto-4E1DFE82-FD40-888B-D73C-A0350D77A948 (d0, q0, r1, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795095045: Sending PUBLISH to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (d0, q0, r0, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795095045: Received DISCONNECT from auto-4E1DFE82-FD40-888B-D73C-A0350D77A948
+1795095045: Client auto-4E1DFE82-FD40-888B-D73C-A0350D77A948 [127.0.0.1:45908] disconnected.
+1795095045: New connection from 127.0.0.1:45918 on port 1883.
+1795095045: New client connected from 127.0.0.1:45918 as auto-3FD2F119-9AFF-29E5-EF76-9B48741B4A54 (p4, c1, k60).
+1795095045: No will message specified.
+1795095045: Sending CONNACK to auto-3FD2F119-9AFF-29E5-EF76-9B48741B4A54 (0, 0)
+1795095045: Received PUBLISH from auto-3FD2F119-9AFF-29E5-EF76-9B48741B4A54 (d0, q0, r1, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795095045: Sending PUBLISH to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15 (d0, q0, r0, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795095045: Received DISCONNECT from auto-3FD2F119-9AFF-29E5-EF76-9B48741B4A54
+1795095045: Client auto-3FD2F119-9AFF-29E5-EF76-9B48741B4A54 [127.0.0.1:45918] disconnected.
+1795095052: New connection from 127.0.0.1:45922 on port 1883.
+1795095052: New client connected from 127.0.0.1:45922 as auto-4685B536-0C02-7B2C-7CC8-42390F7F0955 (p4, c1, k60).
+1795095052: No will message specified.
+1795095052: Sending CONNACK to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955 (0, 0)
+1795095052: Received SUBSCRIBE from auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095052: 	aulas/professor/# (QoS 0)
+1795095052: auto-4685B536-0C02-7B2C-7CC8-42390F7F0955 0 aulas/professor/#
+1795095052: Sending SUBACK to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095052: Sending PUBLISH to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955 (d0, q0, r1, m0, 'aulas/professor/temperatura', ... (4 bytes))
+1795095052: Sending PUBLISH to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955 (d0, q0, r1, m0, 'aulas/professor/umidade', ... (2 bytes))
+1795095052: Sending PUBLISH to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955 (d0, q0, r1, m0, 'aulas/professor/qualidade_ar', ... (3 bytes))
+1795095073: Received PINGREQ from auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095073: Sending PINGRESP to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095112: Received PINGREQ from auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095112: Sending PINGRESP to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095134: Received PINGREQ from auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095134: Sending PINGRESP to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095171: Received PINGREQ from auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095171: Sending PINGRESP to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095194: Received PINGREQ from auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095194: Sending PINGRESP to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095231: Received PINGREQ from auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095231: Sending PINGRESP to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095254: Received PINGREQ from auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095254: Sending PINGRESP to auto-18733E26-9EFB-C22E-CBBE-289E0BFD8F15
+1795095291: Received PINGREQ from auto-4685B536-0C02-7B2C-7CC8-42390F7F0955
+1795095291: Sending PINGRESP to auto-4685B536-0C02-7B2C-7CC8-42390F7F0955

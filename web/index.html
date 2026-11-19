@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dashboard IoT de monitoramento ambiental com ESP32 e MQTT."
+    />
+    <title>Estacao IoT | Monitoramento ambiental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="header">
+        <a class="brand" href="#sobre" data-view="sobre"
+          ><span class="mark"><i></i><i></i><i></i></span
+          ><span><b>ESTACAO</b><small>monitoramento IoT</small></span></a
+        >
+        <div class="head-meta">
+          <small>INTERNET DAS COISAS / 2026</small
+          ><strong id="header-group">GRUPO 09 · TURMA 3E</strong>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">Menu</button>
+        <nav id="nav">
+          <a href="#sobre" data-view="sobre" class="active">Sobre o projeto</a
+          ><a href="#dashboard" data-view="dashboard">Dashboard ao vivo</a
+          ><button id="open-settings">Configuracoes</button>
+        </nav>
+      </header>
+      <main>
+        <section id="view-sobre" class="view">
+          <div class="hero-grid">
+            <div class="hero-copy reveal">
+              <p class="kicker">
+                <span></span> Estacao 01 / ambiente conectado
+              </p>
+              <h1>O ambiente<br /><em>fala.</em> A gente<br />escuta.</h1>
+              <p class="lead">
+                Uma ponte entre o mundo fisico e uma leitura clara dos dados. O
+                ESP32 coleta, o MQTT transporta e este painel transforma sinais
+                em decisoes.
+              </p>
+              <a class="button dark" href="#dashboard" data-view="dashboard"
+                >Abrir dashboard <b>→</b></a
+              >
+            </div>
+            <div class="hero-art reveal delay">
+              <div class="orbit one"></div>
+              <div class="orbit two"></div>
+              <div class="tile temp">
+                <b>°C</b><strong>28.4</strong><small>temperatura</small>
+              </div>
+              <div class="tile air">
+                <b>AQ</b><strong>318</strong><small>qualidade do ar</small>
+              </div>
+              <div class="device">
+                <small>ESP32 / NODE 01</small>
+                <div class="pins"><i></i><i></i><i></i><i></i></div>
+                <div class="lines"><i></i><i></i><i></i></div>
+                <b>LIVE</b>
+              </div>
+              <div class="stamp">
+                DADOS<br /><b>EM TEMPO<br />REAL</b>
+              </div>
+            </div>
+          </div>
+          <div class="stats">
+            <div><b>03</b><span>sensores monitorados</span></div>
+            <div><b>03s</b><span>intervalo de leitura</span></div>
+            <div><b>24/7</b><span>visibilidade do ambiente</span></div>
+            <div><b>MQTT</b><span>protocolo de transporte</span></div>
+          </div>
+          <section class="story">
+            <div class="section-title">
+              <div>
+                <p class="kicker">Como funciona</p>
+                <h2>Pequenos sinais.<br /><em>Uma leitura maior.</em></h2>
+              </div>
+              <p>
+                O projeto foi desenhado como uma cadeia simples e confiavel:
+                medir, transportar e tornar visivel.
+              </p>
+            </div>
+            <div class="cards">
+              <article>
+                <img
+                  src="assets/sensor.svg"
+                  alt="Sensores conectados ao ESP32"
+                />
+                <div>
+                  <small>01 / COLETA</small>
+                  <h3>O hardware sente</h3>
+                  <p>
+                    DHT11 mede temperatura e umidade. MQ-135 percebe a qualidade
+                    do ar.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/network.svg"
+                  alt="Fluxo entre ESP32, broker e dashboard"
+                />
+                <div>
+                  <small>02 / CONEXAO</small>
+                  <h3>O dado viaja</h3>
+                  <p>
+                    O ESP32 publica em tres topicos MQTT e o broker distribui
+                    cada leitura.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/dashboard.svg"
+                  alt="Dashboard com cards de monitoramento"
+                />
+                <div>
+                  <small>03 / RESPOSTA</small>
+                  <h3>A tela responde</h3>
+                  <p>
+                    O navegador recebe via WebSockets e atualiza indicadores e
+                    alertas em tempo real.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+        <section id="view-dashboard" class="view dashboard" hidden>
+          <div class="dash-head">
+            <div>
+              <p class="kicker"><span></span> Painel operacional</p>
+              <h1>Dashboard <em>ao vivo</em></h1>
+              <p class="subtle">
+                Leituras ambientais recebidas da estacao ESP32.
+              </p>
+            </div>
+            <div id="connection" class="connection">
+              <i></i><span id="connection-label">Desconectado</span
+              ><button id="connect-button">Conectar</button>
+            </div>
+          </div>
+          <div class="toolbar">
+            <span id="last-update">Aguardando primeira leitura</span
+            ><button id="demo-button" class="button outline">
+              Iniciar demonstracao
+            </button>
+          </div>
+          <div class="metrics">
+            <article class="metric temp-m">
+              <header><small>Temperatura</small><b>°C</b></header>
+              <div>
+                <strong id="temperature-value">--</strong><span>°C</span>
+              </div>
+              <footer>
+                <span>limite &gt; 28 °C</span
+                ><b id="temperature-state">Aguardando</b>
+              </footer>
+              <i><b id="temperature-bar"></b></i>
+            </article>
+            <article class="metric humidity-m">
+              <header><small>Umidade</small><b>%</b></header>
+              <div><strong id="humidity-value">--</strong><span>%</span></div>
+              <footer>
+                <span>limite &gt; 56%</span
+                ><b id="humidity-state">Aguardando</b>
+              </footer>
+              <i><b id="humidity-bar"></b></i>
+            </article>
+            <article class="metric air-m">
+              <header><small>Qualidade do ar</small><b>AQ</b></header>
+              <div><strong id="air-value">--</strong><span>ppm</span></div>
+              <footer>
+                <span>limite &gt; 400</span><b id="air-state">Aguardando</b>
+              </footer>
+              <i><b id="air-bar"></b></i>
+            </article>
+          </div>
+          <div class="lower">
+            <article class="events">
+              <header>
+                <div>
+                  <small>Atividade recente</small>
+                  <h2>Historico da estacao</h2>
+                </div>
+                <b>LIVE</b>
+              </header>
+              <div id="event-list">
+                <p class="empty">Nenhuma leitura recebida ainda.</p>
+              </div>
+            </article>
+            <aside class="health">
+              <small>Saude do sistema</small>
+              <h2>tudo em ordem?</h2>
+              <p>✓ <span>Broker MQTT</span><b id="broker-health">Offline</b></p>
+              <p>⚙ <span>Ultima mensagem</span><b id="message-health">--</b></p>
+              <p>! <span>Alertas ativos</span><b id="alert-health">0</b></p>
+            </aside>
+          </div>
+          <div class="banner">
+            Projeto IOT SESI SENAI Valinhos <b id="banner-group">Grupo 09</b
+            ><small>ESTACAO 01 / 2026</small>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span>SESI SENAI VALINHOS / PROJETO IOT</span
+        ><span
+          >Integrantes:
+          <b id="footer-members">Nome 1 · Nome 2 · Nome 3</b></span
+        ><span>Professor Felipe</span>
+      </footer>
+    </div>
+    <dialog id="settings-dialog">
+      <form method="dialog" id="settings-form">
+        <button class="close">×</button>
+        <p class="kicker">Configuracao local</p>
+        <h2>Conectar a estacao</h2>
+        <p class="subtle">Os dados ficam neste navegador.</p>
+        <label
+          >Host do broker<input
+            id="broker-host"
+            value="localhost"
+            required /></label
+        ><label
+          >Porta WebSockets<input
+            id="broker-port"
+            type="number"
+            value="9001"
+            required /></label
+        ><label
+          >Senha do grupo<input
+            id="group-password"
+            type="password"
+            placeholder="Fornecida pelo professor"
+            required /></label
+        ><button class="button dark" type="submit">Salvar configuracao</button>
+      </form>
+    </dialog>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/mqttws31.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
